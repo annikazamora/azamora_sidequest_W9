@@ -37,6 +37,7 @@ let attackFrameCounter = 0;
 // --- DEBUG / GRAVITY SETTINGS ---
 let showDebug = false;
 let moonGravityOn = false;
+let showHitboxes = false;
 
 const NORMAL_GRAVITY = 10;
 const MOON_GRAVITY = 1.6;
@@ -165,6 +166,10 @@ function keyPressed() {
   if (key === "g" || key === "G") {
     toggleMoonGravity();
   }
+
+  if (key === "h" || key === "H") {
+    showHitboxes = !showHitboxes;
+  }
 }
 
 function mousePressed() {
@@ -233,6 +238,18 @@ function draw() {
   // --- KEEP IN VIEW ---
   player.pos.x = constrain(player.pos.x, FRAME_W / 2, VIEWW - FRAME_W / 2);
 
+  // --- HITBOX DEBUG ---
+  player.debug = showHitboxes;
+  sensor.debug = showHitboxes;
+
+  for (let g of ground) {
+    g.debug = showHitboxes;
+  }
+
+  for (let d of groundDeep) {
+    d.debug = showHitboxes;
+  }
+
   // --- DEBUG SCREEN ---
   if (showDebug) {
     drawDebugScreen(grounded);
@@ -257,7 +274,7 @@ function drawDebugScreen(grounded) {
   push();
   noStroke();
   fill(0, 180);
-  rect(10, 10, 140, 78, 8);
+  rect(10, 10, 145, 90, 8);
 
   fill(255);
   textSize(10);
@@ -265,10 +282,10 @@ function drawDebugScreen(grounded) {
 
   text("DEBUG MENU", 18, 16);
   text("Moon Gravity: " + (moonGravityOn ? "ON" : "OFF"), 18, 30);
-  text("Gravity Y: " + world.gravity.y, 18, 42);
+  text("Hitboxes: " + (showHitboxes ? "ON" : "OFF"), 18, 42);
   text("Grounded: " + grounded, 18, 54);
   text("G = toggle gravity", 18, 66);
-  text("M = hide menu", 18, 78);
+  text("H = toggle hitboxes", 18, 78);
 
   pop();
 

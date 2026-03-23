@@ -15,7 +15,7 @@ Annika Zamora, 21075753, azamora
 
 ## Description
 
-A fox is able to move around the area. Player can click the "m" key to toggle on/off a debug screen which allows the gravity and
+A fox is able to move around the area. Player can click the "m" key to toggle on/off a debug screen which allows the gravity and hitboxes to be toggled on/off.
 
 ---
 
@@ -23,8 +23,7 @@ A fox is able to move around the area. Player can click the "m" key to toggle on
 
 Learning Goals:
 
-- Be familiar with using the Claude Haiku 4.5 tool by prompting ideas and having it translate them into code
-- Being creative by implementing a theme/emotion into the blob
+- Implement a debugging screen
 
 ---
 
@@ -36,6 +35,6 @@ N/A
 
 ## GenAI
 
-The original code was written by Dr. Karen Cochrane but she used GenAI to write the comments. The code was modified by Annika Zamora using Claude Haiku 4.5.
+The original code was written by Dr. Karen Cochrane but she used GenAI to write the comments. The code was modified by Annika Zamora using ChatGPT 5.2
 
 ---
