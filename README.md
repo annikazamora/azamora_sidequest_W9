@@ -1,6 +1,6 @@
 ## Project Title
 
-GBDA302 Week 2 Side Quest
+GBDA302 Week 9 Side Quest
 
 ---
 
@@ -15,9 +15,7 @@ Annika Zamora, 21075753, azamora
 
 ## Description
 
-The blob moves left/right (A/D or ←/→) and jumps (Space/W/↑).
-Demonstrates horizontal input, gravity, ground collision, and jump gating.
-Edited to show the greed emotion. Has interactive collecting feature where blob can jump and "eat" pieces placed on the map.
+A fox is able to move around the area. Player can click the "m" key to toggle on/off a debug screen which allows the gravity and
 
 ---
 
