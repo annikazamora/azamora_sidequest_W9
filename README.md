@@ -7,7 +7,7 @@ GBDA302 Week 9 Side Quest
 ## Authors
 
 Original code by Karen Cochrane and David Han
-Edited by Annika Zamora, using the Claude Haiku 4.5 GenAI tool.
+Edited by Annika Zamora, using the ChatGPT GenAI tool.
 
 Annika Zamora, 21075753, azamora
 
@@ -24,6 +24,8 @@ A fox is able to move around the area. Player can click the "m" key to toggle on
 Learning Goals:
 
 - Implement a debugging screen
+- Create a toggle for gravity
+- Add another feature that could be toggled on/off
 
 ---
 
